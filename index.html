@@ -145,124 +145,6 @@ by sending an e-mail to Kate Blackburn
 <hr/>
 
 <!--
-  SCHEDULE
-
-  Show the workshop's schedule.  Edit the items and times in the table
-  to match your plans.  You may also want to change 'Day 1' and 'Day
-  2' to be actual dates or days of the week.
--->
-
-<h2>Schedule</h2>
-The workshop will run from 9:00 am - 4:30 pm each day. 
-Below is a rough outline of each day's activities. 
-Be aware that this schedule is subject to change, depending on each day's progression.
-<div class="row-fluid">
-  <div class="span6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Intro to Python</tr>
-      <tr> <td>10:15</td>  <td>Coffee break</td> </tr>
-      <tr> <td>10:30</td>  <td>Building programs in Python (part 1) </td> </tr>
-      <tr> <td>11:30</td>  <td>Break</td> </tr>      
-      <tr> <td>11:45</td>  <td>Building programs in Python (part 1, cont'd)</td> </tr>
-      <tr> <td>12:30</td>  <td>Take Control of Your Career – Networking session over lunch (provided)</td> </tr>
-      <tr> <td>14:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>15:00</td>  <td>Break</td> </tr>
-      <tr> <td>15:15</td>  <td>Intro to Pandas</td> </tr>
-      <tr> <td>16:30</td>  <td>End of session</td> </tr>
-    </table>
-  </div>
-  <div class="span6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Building programs in Python (part 2) </td> </tr>
-      <tr> <td>10:15</td>  <td>Coffee break</td> </tr>
-      <tr> <td>10:45</td>  <td>Building programs in Python (part 2, cont'd)</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch (provided)</td> </tr>
-      <tr> <td>13:00</td>  <td>Regular expressions</td> </tr>
-      <tr> <td>14:15</td>  <td>Break </td> </tr>
-      <tr> <td>14:30</td>  <td>Collaboration with version control </td> </tr>
-      <tr> <td>15:15</td>  <td>Break  </td> </tr>
-      <tr> <td>15:30</td>  <td>Collaboration with version control (cont'd)</td> </tr>
-      <tr> <td>16:30</td>  <td>End of workshop</td> </tr>
-    </table>
-  </div>
-</div>
-
-<!--
-  ETHERPAD
-
-  Display the Etherpad for the workshop.  You can set this up in
-  advance or on the first day; either way, make sure you push changes
-  to GitHub after you have its URL.  To create an Etherpad, go to
-
-      http://etherpad.mozilla.org/YYYY-MM-DD-site
-
-  where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
-  '2015-06-10-esu'.
--->
-{% if page.etherpad %}
-<p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
-
-<hr/>
-
-<!--
-  SYLLABUS
-
-  Show what topics will be covered.
-
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="span6" around inside
-     the div's with class="row-fluid" to balance the multi-column layout.
-
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
-<h2>Syllabus</h2>
-<div class="row-fluid">
-  <div class="span6">
-    <h3>Programming in Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using Python from the command line</li>
-      <li>Data anlaysis with Pandas</li>
-      <li>Regular expressions</li>
-      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="span6">
-    <h3>Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
-
-<hr/>
-
-<!--
   SETUP
 
   Delete irrelevant sections from the setup instructions.  Each
@@ -525,30 +407,122 @@ If you need help with setup, instructors will be available at the following time
 
 
 
+
 <!--
-  Uncomment this section if you are using our virtual machine.
+  SCHEDULE
 
-<div>
-  <h3>Virtual Machine</h3>
-
-  <p>
-    Some instructors prefer to have learners use a virtual machine (VM)
-    rather than install software on their own computers.  If your
-    instructors have chosen to do this, please:
-  </p>
-  <ol>
-    <li>
-      Install <a href="https://www.virtualbox.org/">VirtualBox</a>.
-    </li>
-    <li>
-      Download our <a href="{{site.swc_vm}}">VM image</a>.
-      <strong>Warning:</strong> this file is 1.7 GByte, so please
-      download it <em>before</em> coming to your workshop.
-    </li>
-    <li>
-      Load the VM into VirtualBox by selecting "Import Appliance" and
-      loading the <code>.ova</code> file.
-    </li>
-  </ol>
-</div>
+  Show the workshop's schedule.  Edit the items and times in the table
+  to match your plans.  You may also want to change 'Day 1' and 'Day
+  2' to be actual dates or days of the week.
 -->
+
+<h2>Schedule</h2>
+The workshop will run from 9:00 am - 4:30 pm each day. 
+Below is a rough outline of each day's activities. 
+Be aware that this schedule is subject to change, depending on each day's progression.
+<div class="row-fluid">
+  <div class="span6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td>  <td>Intro to Python</tr>
+      <tr> <td>10:15</td>  <td>Coffee break</td> </tr>
+      <tr> <td>10:30</td>  <td>Building programs in Python (part 1) </td> </tr>
+      <tr> <td>11:30</td>  <td>Break</td> </tr>      
+      <tr> <td>11:45</td>  <td>Building programs in Python (part 1, cont'd)</td> </tr>
+      <tr> <td>12:30</td>  <td>Take Control of Your Career – Networking session over lunch (provided)</td> </tr>
+      <tr> <td>14:00</td>  <td>Version control with Git</td> </tr>
+      <tr> <td>15:00</td>  <td>Break</td> </tr>
+      <tr> <td>15:15</td>  <td>Intro to Pandas</td> </tr>
+      <tr> <td>16:30</td>  <td>End of session</td> </tr>
+    </table>
+  </div>
+  <div class="span6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td>  <td>Building programs in Python (part 2) </td> </tr>
+      <tr> <td>10:15</td>  <td>Coffee break</td> </tr>
+      <tr> <td>10:45</td>  <td>Building programs in Python (part 2, cont'd)</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch (provided)</td> </tr>
+      <tr> <td>13:00</td>  <td>Regular expressions</td> </tr>
+      <tr> <td>14:15</td>  <td>Break </td> </tr>
+      <tr> <td>14:30</td>  <td>Collaboration with version control </td> </tr>
+      <tr> <td>15:15</td>  <td>Break  </td> </tr>
+      <tr> <td>15:30</td>  <td>Collaboration with version control (cont'd)</td> </tr>
+      <tr> <td>16:30</td>  <td>End of workshop</td> </tr>
+    </table>
+  </div>
+</div>
+
+<!--
+  ETHERPAD
+
+  Display the Etherpad for the workshop.  You can set this up in
+  advance or on the first day; either way, make sure you push changes
+  to GitHub after you have its URL.  To create an Etherpad, go to
+
+      http://etherpad.mozilla.org/YYYY-MM-DD-site
+
+  where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
+  '2015-06-10-esu'.
+-->
+{% if page.etherpad %}
+<p>
+  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <br/>
+  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
+
+<hr/>
+
+<!--
+  SYLLABUS
+
+  Show what topics will be covered.
+
+  1. If your workshop is R rather than Python, remove the comment
+     around that section and put a comment around the Python section.
+  2. Some workshops will delete SQL.
+  3. Please make sure the list of topics is synchronized with what you
+     intend to teach.
+  4. You may need to move the div's with class="span6" around inside
+     the div's with class="row-fluid" to balance the multi-column layout.
+
+  This is one of the places where people frequently make mistakes, so
+  please preview your site before committing, and make sure to run
+  'tools/check' as well.
+-->
+<h2>Syllabus</h2>
+<div class="row-fluid">
+  <div class="span6">
+    <h3>Programming in Python</h3>
+    <ul>
+      <li>Using libraries</li>
+      <li>Working with arrays</li>
+      <li>Reading and plotting data</li>
+      <li>Creating and using functions</li>
+      <li>Loops and conditionals</li>
+      <li>Using Python from the command line</li>
+      <li>Data anlaysis with Pandas</li>
+      <li>Regular expressions</li>
+      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
+    </ul>
+  </div>
+  <div class="span6">
+    <h3>Version Control with Git</h3>
+    <ul>
+      <li>Creating a repository</li>
+      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
+      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
+      <li>Ignoring files</li>
+      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+      <li>Resolving conflicts</li>
+      <li>Open licenses</li>
+      <li>Where to host work, and why</li>
+      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
+    </ul>
+  </div>
+</div>
+
+<hr/>
+
