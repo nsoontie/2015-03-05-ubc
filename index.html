@@ -12,7 +12,8 @@ startdate: 2015-03-05
 enddate: 2015-03-06
 instructor: ["Jenny Bryan", "Karina Ramos Musalem", "Nancy Soontiens", "Daisie Huang", "Tiffany Timbers"]
 helper: ["Gloria Li", "Julia Gustaven"]
-contact: jenny@stat.ubc.ca
+contact1: nsoontie@eos.ubc.ca
+contact2: blackburn@science.ubc.ca
 etherpad: https://etherpad.mozilla.org/2015-03-05-ubc
 
 ---
@@ -57,6 +58,12 @@ We are currently in the process of customizing the content for this particular w
   Edit the general explanatory paragraph below if you want to change
   the pitch.
 -->
+<p><b>NOTE:  The 2-day workshop is fully booked. If you registered but things
+have changed for you and you will not attend, please let us know immediately 
+so your spot can be given to one of your peers on the waiting list,
+by sending an e-mail to Kate Blackburn 
+(<a href='mailto:{{page.contact2}}'>blackburn at science.ubc.ca</a>). </b></p>
+
 <p>
   <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
   is to help scientists and engineers get more research done in less
@@ -120,13 +127,19 @@ We are currently in the process of customizing the content for this particular w
 -->
 <p>
   <strong>Contact</strong>:
-  Please mail
+<ul>
+  <li>Please mail
   {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+    <a href='mailto:{{page.contact1}}'>{{page.contact1}}</a>
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
+  for more information regarding workshop content and technical questions.</li>
+  <li> Please mail 
+ 	<a href='mailto:{{page.contact2}}'>blackburn at science.ubc.ca</a> for questions regarding 
+ 	registration status, access to building, etc.  
+  </li>
+</ul>
 </p>
 
 <hr/>
