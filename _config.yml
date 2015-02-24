@@ -1,7 +1,7 @@
 #--------------------------------------------------------------------------------
 # Values for this workshop - EDIT THIS SECTION.
 #--------------------------------------------------------------------------------
-workshop_repo   : "http://github.com/swcarpentry/workshop-template"
+workshop_repo   : "https://github.com/nsoontie/WiSE-swc-ubc"
 workshop_site   : "http://nsoontie.github.io/2015-03-05-ubc/"
 #--------------------------------------------------------------------------------
 # Standard Software Carpentry settings - should not need to be modified.
