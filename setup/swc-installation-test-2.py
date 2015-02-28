@@ -96,9 +96,9 @@ CHECKS = [
     'matplotlib',
     'pandas',
     'sympy',
-    'Cython',
+    #'Cython',
     'networkx',
-    'mayavi.mlab',
+    #'mayavi.mlab',
     ]
 
 CHECKER = {}
