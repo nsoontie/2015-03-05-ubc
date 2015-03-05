@@ -1,4 +1,10 @@
-Python RegEx Cheatsheet
+
+---
+layout: lesson
+root: ../..
+---
+
+## Python RegEx Cheatsheet
 
 Functions:
 
