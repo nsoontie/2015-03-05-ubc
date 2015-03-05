@@ -28,7 +28,8 @@ and to use that language *well*.
 3.  [Analyzing Multiple Data Sets](03-loop.html)
 4.  [Making Choices](04-cond.html)
 5.  [Intro to Pandas](Pandas-Lesson.html)
-6.  [Figures in Python]
+6.  [Figures in 
+Python](http://nbviewer.ipython.org/url/www.eoas.ubc.ca/~kramosmu/PlotsPythonExtraLesson.ipynb)
 7.  [Defensive Programming (optional)](05-defensive.html)
 8.  [Command-Line Programs](06-cmdline.html)
 9.  [Regular Expressions](RegEx.html) and [Cheat 
