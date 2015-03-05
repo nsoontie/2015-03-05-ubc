@@ -1,0 +1,15 @@
+---
+layout: lesson
+roor: ../..
+---
+
+<h2 id="python-regex-cheatsheet">Python RegEx Cheatsheet</h2>
+<p>Functions:</p>
+<p>re.search(pattern_to_search, string_to_search_in) ##function to find a regular expression in a string (returns a match object or none)</p>
+<p>match.group(k) ##function to extract the k'th regular expression from a string</p>
+<p>re.findall(pattern_to_search, string_to_search_in) ##function to find more than one occurence of a regular expression in a string (returns a match object or none)</p>
+<p>re.compile(pattern_to_search) ##function to compile a pattern</p>
+<p>Symbols:</p>
+<p>| ## &quot;OR&quot; . ## any single character * ## 0 or more + ## 1 or more ? ## 0 or 1 {N} ## match N times {M,N} ## matches from M to N times</p>
+<p>[...] ## matches characters in a set defined by the user (see examples below) [0-9] ## matches characters in the set from 0-9 [a-z] ## matches characters in the set from a-z [A-Z] ## matches characters in the set from A-Z [aeiou] ## matches characters in the set from aeiou</p>
+<p>## matches digits ## matches whitespace characters ',' or '' or '' or '' ## matches word characters [A-Za-z0-9] ## matches non-space characters ## matches non-word characters ^ ## matches the beginning of the input text ## matches the boundary between word and non-word characters</p>
