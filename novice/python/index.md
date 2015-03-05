@@ -31,7 +31,8 @@ and to use that language *well*.
 6.  [Figures in Python]
 7.  [Defensive Programming (optional)](05-defensive.html)
 8.  [Command-Line Programs](06-cmdline.html)
-9.  [Regular Expressions]
+9.  [Regular Expressions](RegEx.html) and [Cheat 
+Sheet](Python_RegEx_Cheatsheet.html)
 
 [Reference](../ref/03-python.html)
 
