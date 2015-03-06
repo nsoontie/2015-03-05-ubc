@@ -33,7 +33,7 @@ Python](http://nbviewer.ipython.org/url/www.eoas.ubc.ca/~kramosmu/PlotsPythonExt
 7.  [Defensive Programming (optional)](05-defensive.html)
 8.  [Command-Line Programs](06-cmdline.html)
 9.  [Regular Expressions](RegEx.html) and [Cheat 
-Sheet](Python_RegEx_Cheatsheet.html)
+Sheet](Python_RegEx_Cheatsheet.txt)
 
 [Reference](../ref/03-python.html)
 
